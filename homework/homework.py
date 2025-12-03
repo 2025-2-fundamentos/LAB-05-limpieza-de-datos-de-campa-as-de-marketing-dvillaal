@@ -116,7 +116,5 @@ def clean_campaign_data():
     df_campaign.to_csv("files/output/campaign.csv", index=False)
     df_economics.to_csv("files/output/economics.csv", index=False)
 
-    campaign = pd.read_csv("files/output/campaign.csv")
-
 if __name__ == "__main__":
     clean_campaign_data()
