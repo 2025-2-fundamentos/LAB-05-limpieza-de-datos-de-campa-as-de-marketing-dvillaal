@@ -106,7 +106,7 @@ def clean_campaign_data():
     df_economics = df[['client_id', 'cons_price_idx', 'euribor_three_months']].copy()
     
 
-    if os.path.exists("Files/output"):
+    if os.path.exists("files/output"):
         for file in glob.glob("files/output/*"):
             os.remove(file)
     else:
